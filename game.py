@@ -20,7 +20,15 @@ class Weapon:
 	"""
 
 	UNARMED_POWER = 20
+	def __init__(self,name,power,min_level):
+		self.__name = name
+		self.power = power
+		self.min_level = min_level
 
+	def name(self):
+		return self.__name
+
+	# methode de classe make_unarmed qui construit un weapon "Unarmed" avec une puissance de 20
 
 class Character:
 	"""
